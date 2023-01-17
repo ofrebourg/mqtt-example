@@ -28,13 +28,6 @@ yarn build
 yarn test:unit
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-yarn build
-yarn test:e2e # or `yarn test:e2e:ci` for headless testing
-```
-
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
