@@ -1,22 +1,10 @@
 import { createTestingPinia } from '@pinia/testing'
 import { mount } from '@vue/test-utils'
-import { defineStore } from 'pinia'
 import { describe, expect, it } from 'vitest'
 import Vue from 'vue'
 import Vuetify from 'vuetify'
 
 import MqttMessages from '../MqttMessages.vue'
-
-// const useMqttStore = defineStore('mqtt', {
-//   state: () => ({
-//     receivedMessages: [
-//       {
-//         topic: 'test',
-//         body: '1234'
-//       }
-//     ]
-//   })
-// })
 
 // We need to use a global Vue instance, otherwise Vuetify will complain about
 // read-only attributes.
@@ -27,7 +15,6 @@ Vue.use(Vuetify)
 
 describe('MqttMessages', () => {
   it('renders properly', () => {
-    // const wrapper = mount(MqttMessages, { pinia: createTestingPinia() })
     const wrapper = mount(MqttMessages, {
       vuetify: new Vuetify(),
       pinia: createTestingPinia({
@@ -37,12 +24,14 @@ describe('MqttMessages', () => {
           }
         },
         initialState: {
-          receivedMessages: [
-            {
-              topic: 'test',
-              body: '1234'
-            }
-          ]
+          mqtt: {
+            receivedMessages: [
+              {
+                topic: 'test',
+                body: '1234'
+              }
+            ]
+          }
         }
       })
     })
