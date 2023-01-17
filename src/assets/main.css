@@ -8,10 +8,13 @@
   font-weight: normal;
 }
 
-a,
-.yellow {
+.v-application a {
   text-decoration: none;
-  color: hsl(45, 100%, 50%);
+}
+
+.v-application a:not(.router-link-exact-active),
+.main-title {
+  color: hsl(45, 100%, 50%) !important;
   transition: 0.4s;
 }
 

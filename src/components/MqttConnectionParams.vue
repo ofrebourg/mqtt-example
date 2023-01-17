@@ -24,6 +24,9 @@
       class="cp__alert"
     >
       {{ alertMessage }}
+      <div v-if="mqttStore.isConnected">
+        Go to the <a href="/mqtt">MQTT</a> tab to continue.
+      </div>
     </v-alert>
   </div>
 </template>

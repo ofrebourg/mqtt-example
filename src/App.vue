@@ -16,7 +16,6 @@ export default class App extends Vue {}
 
       <div class="wrapper">
         <page-header msg="MQTT Example" />
-        <!-- <h1 class="yellow">MQTT Exercise</h1> -->
 
         <nav>
           <router-link to="/">Connect</router-link>

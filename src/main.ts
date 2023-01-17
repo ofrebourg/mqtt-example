@@ -1,6 +1,5 @@
 import './assets/main.css'
 
-// import { Buffer } from 'buffer'
 import { createPinia, PiniaVuePlugin } from 'pinia'
 import Vue from 'vue'
 
@@ -16,7 +15,3 @@ new Vue({
   vuetify,
   render: h => h(App)
 }).$mount('#app')
-
-// window.global = window
-// // window.Buffer = window.Buffer || require('buffer').Buffer
-// window.Buffer = window.Buffer || Buffer

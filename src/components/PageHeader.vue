@@ -10,7 +10,7 @@ export default class PageHeader extends Vue {
 
 <template>
   <div class="greetings">
-    <h1 class="yellow">{{ msg }}</h1>
+    <h1 class="main-title">{{ msg }}</h1>
     <h3>
       A little project using
       <a target="_blank" href="https://vitejs.dev/">Vite</a>,
