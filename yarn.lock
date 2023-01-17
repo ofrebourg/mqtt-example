@@ -818,6 +818,13 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@pinia/testing@0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@pinia/testing/-/testing-0.0.14.tgz#774791df360a1949c9ea2d8665de35d5a0200251"
+  integrity sha512-ZmZwVNd/NnKYLIfjfuKl0zlJ3UdiXFpsHzSlL6wCeezSlyrqGMxsIQKv0J6fleu38gyCNTPBEipfxrt8V4+VIg==
+  dependencies:
+    vue-demi "*"
+
 "@rollup/plugin-inject@^5.0.3":
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-inject/-/plugin-inject-5.0.3.tgz#0783711efd93a9547d52971db73b2fb6140a67b1"
